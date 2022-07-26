@@ -1,0 +1,121 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000022b93f9b300 .scope module, "tb" "tb" 2 1;
+ .timescale 0 0;
+v0000022b93e958a0_0 .net "P", 0 0, L_0000022b93e13150;  1 drivers
+v0000022b93e95a80_0 .net "Q", 0 0, L_0000022b93f9af50;  1 drivers
+v0000022b93e96700_0 .net "R", 0 0, L_0000022b93e978c0;  1 drivers
+v0000022b93e96020_0 .net "S", 0 0, L_0000022b93e97d20;  1 drivers
+v0000022b93e962a0_0 .net "T", 0 0, L_0000022b93e97af0;  1 drivers
+v0000022b93e95940_0 .net "U", 0 0, L_0000022b93e97c40;  1 drivers
+v0000022b93e967a0_0 .var "t_a", 0 0;
+v0000022b93e960c0_0 .var "t_b", 0 0;
+S_0000022b93f9b490 .scope module, "a1" "invert" 2 6, 3 1 0, S_0000022b93f9b300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i";
+    .port_info 1 /OUTPUT 1 "o1";
+L_0000022b93e13150 .functor NOT 1, v0000022b93e967a0_0, C4<0>, C4<0>, C4<0>;
+v0000022b93e13370_0 .net "i", 0 0, v0000022b93e967a0_0;  1 drivers
+v0000022b93f9e8c0_0 .net "o1", 0 0, L_0000022b93e13150;  alias, 1 drivers
+S_0000022b93f9b620 .scope module, "a2" "and2" 2 7, 3 5 0, S_0000022b93f9b300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i0";
+    .port_info 1 /INPUT 1 "i1";
+    .port_info 2 /OUTPUT 1 "o2";
+L_0000022b93f9af50 .functor AND 1, v0000022b93e967a0_0, v0000022b93e960c0_0, C4<1>, C4<1>;
+v0000022b93e95c60_0 .net "i0", 0 0, v0000022b93e967a0_0;  alias, 1 drivers
+v0000022b93e95ee0_0 .net "i1", 0 0, v0000022b93e960c0_0;  1 drivers
+v0000022b93e96520_0 .net "o2", 0 0, L_0000022b93f9af50;  alias, 1 drivers
+S_0000022b93e46890 .scope module, "a3" "or2" 2 8, 3 9 0, S_0000022b93f9b300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i0";
+    .port_info 1 /INPUT 1 "i1";
+    .port_info 2 /OUTPUT 1 "o3";
+L_0000022b93e978c0 .functor OR 1, v0000022b93e967a0_0, v0000022b93e960c0_0, C4<0>, C4<0>;
+v0000022b93e96160_0 .net "i0", 0 0, v0000022b93e967a0_0;  alias, 1 drivers
+v0000022b93e96480_0 .net "i1", 0 0, v0000022b93e960c0_0;  alias, 1 drivers
+v0000022b93e95b20_0 .net "o3", 0 0, L_0000022b93e978c0;  alias, 1 drivers
+S_0000022b93e46a20 .scope module, "a4" "xor2" 2 9, 3 13 0, S_0000022b93f9b300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i0";
+    .port_info 1 /INPUT 1 "i1";
+    .port_info 2 /OUTPUT 1 "o4";
+L_0000022b93e97d20 .functor XOR 1, v0000022b93e967a0_0, v0000022b93e960c0_0, C4<0>, C4<0>;
+v0000022b93e965c0_0 .net "i0", 0 0, v0000022b93e967a0_0;  alias, 1 drivers
+v0000022b93e96660_0 .net "i1", 0 0, v0000022b93e960c0_0;  alias, 1 drivers
+v0000022b93e95bc0_0 .net "o4", 0 0, L_0000022b93e97d20;  alias, 1 drivers
+S_0000022b93e46bb0 .scope module, "a5" "nand2" 2 10, 3 17 0, S_0000022b93f9b300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i0";
+    .port_info 1 /INPUT 1 "i1";
+    .port_info 2 /OUTPUT 1 "o5";
+L_0000022b93e97e70 .functor AND 1, v0000022b93e967a0_0, v0000022b93e960c0_0, C4<1>, C4<1>;
+L_0000022b93e97af0 .functor NOT 1, L_0000022b93e97e70, C4<0>, C4<0>, C4<0>;
+v0000022b93e96340_0 .net "i0", 0 0, v0000022b93e967a0_0;  alias, 1 drivers
+v0000022b93e95da0_0 .net "i1", 0 0, v0000022b93e960c0_0;  alias, 1 drivers
+v0000022b93e96200_0 .net "o5", 0 0, L_0000022b93e97af0;  alias, 1 drivers
+v0000022b93e959e0_0 .net "t", 0 0, L_0000022b93e97e70;  1 drivers
+S_0000022b93f9dd90 .scope module, "a6" "nor2" 2 11, 3 22 0, S_0000022b93f9b300;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "i0";
+    .port_info 1 /INPUT 1 "i1";
+    .port_info 2 /OUTPUT 1 "o6";
+L_0000022b93e97bd0 .functor OR 1, v0000022b93e967a0_0, v0000022b93e960c0_0, C4<0>, C4<0>;
+L_0000022b93e97c40 .functor NOT 1, L_0000022b93e97bd0, C4<0>, C4<0>, C4<0>;
+v0000022b93e95d00_0 .net *"_ivl_0", 0 0, L_0000022b93e97bd0;  1 drivers
+v0000022b93e95f80_0 .net "i0", 0 0, v0000022b93e967a0_0;  alias, 1 drivers
+v0000022b93e95e40_0 .net "i1", 0 0, v0000022b93e960c0_0;  alias, 1 drivers
+v0000022b93e963e0_0 .net "o6", 0 0, L_0000022b93e97c40;  alias, 1 drivers
+    .scope S_0000022b93f9b300;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "dump2.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000022b93f9b300 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000022b93f9b300;
+T_1 ;
+    %vpi_call 2 15 "$monitor", v0000022b93e967a0_0, v0000022b93e960c0_0, v0000022b93e958a0_0, v0000022b93e95a80_0, v0000022b93e96700_0, v0000022b93e96020_0, v0000022b93e962a0_0, v0000022b93e95940_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e967a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e960c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e967a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022b93e960c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022b93e967a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e960c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022b93e967a0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000022b93e960c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e967a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e960c0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e967a0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000022b93e960c0_0, 0, 1;
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "btestbench.v";
+    "b.v";

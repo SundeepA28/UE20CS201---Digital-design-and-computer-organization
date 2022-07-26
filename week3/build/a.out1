@@ -1,0 +1,100 @@
+**** module/scope: and3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: and3.and2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: and3.and2_1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** module/scope: mux2
+     Flip-Flops   : 0
+     Logic Gates  : 66
+     EQUALITY[32]: 1 units
+     MUX[2]: 1 slices
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 66
+     EQUALITY[32]: 1 units
+     MUX[2]: 1 slices
+**** module/scope: nand3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nand3.and2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: nand3.nand2_1
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nand3.nand2_1.and2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: nand3.nand2_1.invert_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 3
+**** module/scope: nor3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nor3.nor2_0
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nor3.nor2_0.invert_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: nor3.nor2_0.or2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: nor3.or2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 3
+**** module/scope: or3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: or3.or2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: or3.or2_1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 2
+**** module/scope: xnor3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: xnor3.xnor2_0
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: xnor3.xnor2_0.invert_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: xnor3.xnor2_0.xor2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: xnor3.xor2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 3
+**** module/scope: xor3
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: xor3.xor2_0
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** module/scope: xor3.xor2_1
+     Flip-Flops   : 0
+     Logic Gates  : 1
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 2
